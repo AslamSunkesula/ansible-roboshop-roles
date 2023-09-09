@@ -16,11 +16,11 @@
 
 - name: Load Schema
   ansible.builtin.import_role:
-  name: common 
-  tasks_from: load-mongo-schema.yaml
+    name: common 
+    tasks_from: load-mongo-schema.yaml
 
 
 - name: setUp Application
   ansible.builtin.import_role:
-  name: common
-  tasks_from: app-setup.yaml
+    name: common
+    tasks_from: app-setup.yaml
