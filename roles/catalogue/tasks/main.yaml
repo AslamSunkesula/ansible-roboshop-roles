@@ -11,7 +11,7 @@
 - name: install dependencies
   ansible.builtin.command: npm install
     args:
-      chdir: /app
+    chdir: /app
 
 - name: Load Schema
   ansible.builtin.import_role:
