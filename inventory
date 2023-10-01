@@ -1,5 +1,6 @@
 [mongodb]
-mongodb.aslamroboshop.online
+mongodb.aslamroboshop.online ansible_user=centos ansible_password=DevOps321
+
 
 [catalogue]
 catalogue.aslamroboshop.online
