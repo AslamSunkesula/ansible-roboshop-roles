@@ -1,12 +1,12 @@
 - name: Install Node Js 
   ansible.builtin.import_role:
-  name: common
-  tasks_from: nodejs
+    name: common
+    tasks_from: nodejs
 
 - name: App setup
   ansible.builtin.import_role:
-  name: common
-  tasks_from: app-setup
+    name: common
+    tasks_from: app-setup
 
 - name: install dependencies
   ansible.builtin.command: npm install
@@ -15,13 +15,13 @@
 
 - name: Load schema
   ansible.builtin.import_role:
-  name: common
-  tasks_from: loading-mongo-schema
+    name: common
+    tasks_from: loading-mongo-schema
 
 - name: SetUp Application 
   ansible.builtin.import_role:
-  name: common
-  tasks_from: systemd-setup
+    name: common
+    tasks_from: systemd-setup
 
 
 
