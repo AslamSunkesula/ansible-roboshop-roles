@@ -1,0 +1,5 @@
+CATALOGUE_HOST: catalogue.aslamroboshop.online
+USER_HOST: user.aslamroboshop.online
+SHIPPING_HOST: shipping.aslamroboshop.online
+CART_HOST: cart.aslamroboshop.online
+PAYMENT_HOST: payment.aslamroboshop.online
