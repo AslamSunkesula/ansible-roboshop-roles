@@ -10,9 +10,9 @@
     tasks_from: app-setup
 
 - name: maven package
-    ansible.builtin.command: mvn clean package
-    args:
-      chdir: /app
+  ansible.builtin.command: mvn clean package
+  args:
+    chdir: /app
 
 - name: rename jar file
   ansible.builtin.command: mv target/shipping-1.0.jar shipping.jar
