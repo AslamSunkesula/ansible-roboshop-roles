@@ -20,7 +20,6 @@
   ansible.builtin.get_url:
     url: https://roboshop-builds.s3.amazonaws.com/web.zip
     dest: /tmp
-
 - name: extract catalogue artifact
   ansible.builtin.unarchive:
     src: /tmp/web.zip
@@ -31,4 +30,6 @@
   ansible.builtin.copy:
     src: roboshop.conf
     dest: /etc/nginx/default.d/roboshop.conf
-    
+
+  notify:
+  - restart nginxx
